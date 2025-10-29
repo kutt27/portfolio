@@ -11,7 +11,7 @@ This is a simple portfolio website with minimal design, showcasing various proje
 
 2. Navigate to the project directory:
    ```
-   cd portfolio-website
+   cd portfolio
    ```
 
 3. Open `src/index.html` in your web browser to view the portfolio.
