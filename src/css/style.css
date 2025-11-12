@@ -7,6 +7,10 @@
     --body-font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     --card-bg: rgba(255, 255, 255, 0.4);
     --card-border: rgba(0, 0, 0, 0.1);
+    /* Grain / texture controls */
+    --grain-opacity: 0.20; /* increase for stronger grain */
+    --vignette-strength: 0.45; /* darkness around edges */
+    --paper-tint: rgba(255, 238, 180, 0.06); /* warm parchment tint */
 }
 
 /* Base Reset & Body Styling */
@@ -40,10 +44,26 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.15;
+    /* control overall grain strength via variable */
+    opacity: var(--grain-opacity);
     z-index: 0;
     pointer-events: none;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    mix-blend-mode: multiply; /* helps the grain integrate with the base color */
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='2' numOctaves='2' stitchTiles='stitch' seed='3'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* Warm vignette + parchment tint to get an "old temple" feel */
+body::after {
+    content: '';
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    background-image: radial-gradient(ellipse at center, rgba(0,0,0,0) 25%, rgba(0,0,0,var(--vignette-strength)) 100%), linear-gradient(var(--paper-tint), var(--paper-tint));
+    mix-blend-mode: overlay;
+    opacity: 1;
 }
 
 /* Hero Section - Full Screen */
@@ -339,7 +359,10 @@ body::before {
     }
 
     .scroll-indicator {
-        bottom: -10vh;
+        /* place the scroll indicator at the bottom edge of the hero section on mobile
+           so it's visible on initial viewport - small positive inset instead of negative */
+        bottom: 2rem;
+        z-index: 2;
     }
 }
 
@@ -380,5 +403,11 @@ body::before {
     .contact-link {
         font-size: 1rem;
         padding: 0.875rem 1.5rem;
+    }
+
+    /* ensure the scroll indicator sits within the hero bottom on very small screens */
+    .scroll-indicator {
+        bottom: 1.25rem;
+        z-index: 2;
     }
 }
