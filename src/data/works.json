@@ -1,0 +1,111 @@
+{
+  "development": [
+    {
+      "title": "Learning Management System",
+      "description": "Scalable e-commerce platform using React, Node.js, and PostgreSQL with real-time inventory management.",
+      "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop",
+      "tags": [
+        "React",
+        "Node.js",
+        "PostgreSQL"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Mobile App",
+      "description": "Cross-platform mobile application for fitness tracking with offline-first architecture and cloud sync.",
+      "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop",
+      "tags": [
+        "React Native",
+        "Firebase"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "RESTful API Design",
+      "description": "Designed and implemented microservices architecture with GraphQL for a fintech startup.",
+      "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop",
+      "tags": [
+        "GraphQL",
+        "Microservices"
+      ],
+      "link": "#"
+    }
+  ],
+  "finance": [
+    {
+      "title": "Portfolio Management",
+      "description": "Automated portfolio rebalancing tool with risk analytics and performance tracking.",
+      "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop",
+      "tags": [
+        "Python",
+        "Pandas"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Trading Algorithm",
+      "description": "Quantitative trading strategy using machine learning for market prediction and automated execution.",
+      "image": "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=600&fit=crop",
+      "tags": [
+        "ML",
+        "Algo Trading"
+      ],
+      "link": "#"
+    }
+  ],
+  "product": [
+    {
+      "title": "SaaS Launch",
+      "description": "Led product strategy and roadmap for B2B collaboration tool from concept to 10k users.",
+      "image": "https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop",
+      "tags": [
+        "Strategy",
+        "Roadmap"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "User Research",
+      "description": "Conducted comprehensive user research and A/B testing to improve conversion rates by 45%.",
+      "image": "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop",
+      "tags": [
+        "UX Research",
+        "A/B Testing"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Analytics Dashboard",
+      "description": "Built real-time analytics platform for tracking KPIs and user behavior across multiple products.",
+      "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+      "tags": [
+        "Data Viz",
+        "KPIs"
+      ],
+      "link": "#"
+    }
+  ],
+  "anthropology": [
+    {
+      "title": "Digital Culture",
+      "description": "Ethnographic study on how remote work transforms social structures and community formation.",
+      "image": "https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&h=600&fit=crop",
+      "tags": [
+        "Ethnography",
+        "Research"
+      ],
+      "link": "#"
+    },
+    {
+      "title": "Tech & Society",
+      "description": "Published research on the anthropological impact of AI and automation on modern workplaces.",
+      "image": "https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&h=600&fit=crop",
+      "tags": [
+        "AI Ethics",
+        "Society"
+      ],
+      "link": "#"
+    }
+  ]
+}

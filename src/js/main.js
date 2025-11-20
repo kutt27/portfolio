@@ -97,23 +97,66 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }, observerOptions);
 
-    // Observe elements
-    const animatedElements = document.querySelectorAll('.work-card, .section-title, .section-desc, .about-text');
+    function observeElements() {
+        const animatedElements = document.querySelectorAll('.work-card, .section-title, .section-desc, .about-text');
 
-    animatedElements.forEach((el, index) => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(30px)';
-        el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+        animatedElements.forEach((el, index) => {
+            // Only set initial styles if not already animated
+            if (el.style.opacity !== '1') {
+                el.style.opacity = '0';
+                el.style.transform = 'translateY(30px)';
+                el.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
 
-        // Add delay for grid items
-        if (el.classList.contains('work-card')) {
-            // Calculate column index for staggered effect
-            const delay = (index % 3) * 0.1;
-            el.style.transitionDelay = `${delay}s`;
-        }
+                // Add delay for grid items
+                if (el.classList.contains('work-card')) {
+                    // Calculate column index for staggered effect based on its index among siblings
+                    const siblingIndex = Array.from(el.parentNode.children).indexOf(el);
+                    const delay = (siblingIndex % 3) * 0.1;
+                    el.style.transitionDelay = `${delay}s`;
+                }
 
-        observer.observe(el);
-    });
+                observer.observe(el);
+            }
+        });
+    }
+
+    // Load Works from JSON
+    fetch('data/works.json')
+        .then(response => response.json())
+        .then(data => {
+            for (const [category, works] of Object.entries(data)) {
+                const container = document.getElementById(`${category}-grid`);
+                if (container) {
+                    works.forEach(work => {
+                        const article = document.createElement('a');
+                        article.className = 'work-card';
+                        article.href = work.link;
+                        article.target = "_blank"; // Open in new tab
+                        article.rel = "noopener noreferrer";
+
+                        const tagsHtml = work.tags.map(tag => `<span class="tag">${tag}</span>`).join('');
+
+                        article.innerHTML = `
+                            <div class="work-image">
+                                <img src="${work.image}" alt="${work.title}">
+                                <div class="overlay"></div>
+                            </div>
+                            <div class="work-card-inner">
+                                <h3 class="work-title">${work.title}</h3>
+                                <p class="work-description">${work.description}</p>
+                                <div class="work-tags">
+                                    ${tagsHtml}
+                                </div>
+                            </div>
+                        `;
+                        container.appendChild(article);
+                    });
+                }
+            }
+            // Initialize observer after content is loaded
+            observeElements();
+        })
+        .catch(error => console.error('Error loading works:', error));
 
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');

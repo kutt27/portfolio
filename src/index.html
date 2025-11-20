@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="../assets/images/image.png">
+    <link rel="icon" type="image/png" href="/assets/images/image.png">
     <title>Amal - Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700&family=Roboto:wght@400;500&display=swap"
+        rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav class="navbar">
@@ -59,7 +63,8 @@
                 <h1 class="hero-name">
                     <span class="name-text">Amal</span>
                 </h1>
-                <p class="hero-subtitle">Crafting digital experiences at the intersection of <span class="highlight">Design</span> & <span class="highlight">Technology</span>.</p>
+                <p class="hero-subtitle">Crafting digital experiences at the intersection of <span
+                        class="highlight">Design</span> & <span class="highlight">Technology</span>.</p>
                 <div class="scroll-indicator">
                     <div class="mouse">
                         <div class="wheel"></div>
@@ -76,52 +81,8 @@
                 <p class="section-desc">Building scalable and robust applications.</p>
             </div>
 
-            <div class="works-grid">
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800&h=600&fit=crop" alt="Code on screen">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">Full Stack Web App</h3>
-                        <p class="work-description">Scalable e-commerce platform using React, Node.js, and PostgreSQL with real-time inventory management.</p>
-                        <div class="work-tags">
-                            <span class="tag">React</span>
-                            <span class="tag">Node.js</span>
-                            <span class="tag">PostgreSQL</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=800&h=600&fit=crop" alt="Mobile development">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">Mobile App</h3>
-                        <p class="work-description">Cross-platform mobile application for fitness tracking with offline-first architecture and cloud sync.</p>
-                        <div class="work-tags">
-                            <span class="tag">React Native</span>
-                            <span class="tag">Firebase</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=800&h=600&fit=crop" alt="API development">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">RESTful API Design</h3>
-                        <p class="work-description">Designed and implemented microservices architecture with GraphQL for a fintech startup.</p>
-                        <div class="work-tags">
-                            <span class="tag">GraphQL</span>
-                            <span class="tag">Microservices</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="works-grid" id="development-grid">
+                <!-- Works will be loaded dynamically -->
             </div>
         </section>
 
@@ -132,36 +93,8 @@
                 <p class="section-desc">Analyzing markets and managing assets.</p>
             </div>
 
-            <div class="works-grid">
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&h=600&fit=crop" alt="Financial charts">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">Portfolio Management</h3>
-                        <p class="work-description">Automated portfolio rebalancing tool with risk analytics and performance tracking.</p>
-                        <div class="work-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Pandas</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&h=600&fit=crop" alt="Trading platform">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">Trading Algorithm</h3>
-                        <p class="work-description">Quantitative trading strategy using machine learning for market prediction and automated execution.</p>
-                        <div class="work-tags">
-                            <span class="tag">ML</span>
-                            <span class="tag">Algo Trading</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="works-grid" id="finance-grid">
+                <!-- Works will be loaded dynamically -->
             </div>
         </section>
 
@@ -172,51 +105,8 @@
                 <p class="section-desc">Strategizing and optimizing user value.</p>
             </div>
 
-            <div class="works-grid">
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1586717791821-3f44a563fa4c?w=800&h=600&fit=crop" alt="Product design">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">SaaS Launch</h3>
-                        <p class="work-description">Led product strategy and roadmap for B2B collaboration tool from concept to 10k users.</p>
-                        <div class="work-tags">
-                            <span class="tag">Strategy</span>
-                            <span class="tag">Roadmap</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&h=600&fit=crop" alt="User research">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">User Research</h3>
-                        <p class="work-description">Conducted comprehensive user research and A/B testing to improve conversion rates by 45%.</p>
-                        <div class="work-tags">
-                            <span class="tag">UX Research</span>
-                            <span class="tag">A/B Testing</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop" alt="Product metrics">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">Analytics Dashboard</h3>
-                        <p class="work-description">Built real-time analytics platform for tracking KPIs and user behavior across multiple products.</p>
-                        <div class="work-tags">
-                            <span class="tag">Data Viz</span>
-                            <span class="tag">KPIs</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="works-grid" id="product-grid">
+                <!-- Works will be loaded dynamically -->
             </div>
         </section>
 
@@ -227,36 +117,8 @@
                 <p class="section-desc">Understanding human behavior in a digital world.</p>
             </div>
 
-            <div class="works-grid">
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1457369804613-52c61a468e7d?w=800&h=600&fit=crop" alt="Cultural research">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">Digital Culture</h3>
-                        <p class="work-description">Ethnographic study on how remote work transforms social structures and community formation.</p>
-                        <div class="work-tags">
-                            <span class="tag">Ethnography</span>
-                            <span class="tag">Research</span>
-                        </div>
-                    </div>
-                </article>
-
-                <article class="work-card">
-                    <div class="work-image">
-                        <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=800&h=600&fit=crop" alt="Writing and research">
-                        <div class="overlay"></div>
-                    </div>
-                    <div class="work-card-inner">
-                        <h3 class="work-title">Tech & Society</h3>
-                        <p class="work-description">Published research on the anthropological impact of AI and automation on modern workplaces.</p>
-                        <div class="work-tags">
-                            <span class="tag">AI Ethics</span>
-                            <span class="tag">Society</span>
-                        </div>
-                    </div>
-                </article>
+            <div class="works-grid" id="anthropology-grid">
+                <!-- Works will be loaded dynamically -->
             </div>
         </section>
 
@@ -265,14 +127,18 @@
             <div class="about-content">
                 <h2 class="section-title">About Me</h2>
                 <p class="about-text">
-                    I'm a multidisciplinary professional bridging the gaps between code, finance, product strategy, and human behavior. 
-                    My work is driven by a curiosity to understand how things work—from complex algorithms to social dynamics.
+                    I'm a multidisciplinary professional bridging the gaps between code, finance, product strategy, and
+                    human behavior.
+                    My work is driven by a curiosity to understand how things work—from complex algorithms to social
+                    dynamics.
                 </p>
                 <a href="mailto:hello@amal.com" class="contact-link">
                     <span>Let's Talk</span>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
                     </svg>
                 </a>
             </div>
@@ -292,4 +158,5 @@
 
     <script src="js/main.js"></script>
 </body>
+
 </html>
