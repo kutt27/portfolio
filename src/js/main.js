@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Theme Toggle
     const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = themeToggle.querySelector('.material-icons-round');
+    const themeIcon = themeToggle.querySelector('.theme-icon');
 
     // Check for saved theme or system preference
     const savedTheme = localStorage.getItem('theme');
@@ -10,10 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        themeIcon.textContent = 'light_mode';
+        themeIcon.textContent = '☀';
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
-        themeIcon.textContent = 'dark_mode';
+        themeIcon.textContent = '☾';
     }
 
     themeToggle.addEventListener('click', () => {
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
 
-        themeIcon.textContent = newTheme === 'dark' ? 'light_mode' : 'dark_mode';
+        themeIcon.textContent = newTheme === 'dark' ? '☀' : '☾';
     });
 
     // Mobile Menu Toggle
@@ -174,18 +174,18 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScroll = currentScroll;
     });
 
-    // Parallax for Hero Orbs
-    const orbs = document.querySelectorAll('.glow-orb');
+    // Parallax for Hero Blobs
+    const blobs = document.querySelectorAll('.blob');
     window.addEventListener('mousemove', (e) => {
         const x = e.clientX / window.innerWidth;
         const y = e.clientY / window.innerHeight;
 
-        orbs.forEach((orb, index) => {
-            const speed = (index + 1) * 20;
+        blobs.forEach((blob, index) => {
+            const speed = (index + 1) * 15;
             const xOffset = (x - 0.5) * speed;
             const yOffset = (y - 0.5) * speed;
 
-            orb.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
+            blob.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
         });
     });
 });
