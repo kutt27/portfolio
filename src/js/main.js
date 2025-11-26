@@ -174,18 +174,5 @@ document.addEventListener('DOMContentLoaded', function () {
         lastScroll = currentScroll;
     });
 
-    // Parallax for Hero Blobs
-    const blobs = document.querySelectorAll('.blob');
-    window.addEventListener('mousemove', (e) => {
-        const x = e.clientX / window.innerWidth;
-        const y = e.clientY / window.innerHeight;
-
-        blobs.forEach((blob, index) => {
-            const speed = (index + 1) * 15;
-            const xOffset = (x - 0.5) * speed;
-            const yOffset = (y - 0.5) * speed;
-
-            blob.style.transform = `translate(${xOffset}px, ${yOffset}px)`;
-        });
-    });
+    // Parallax for Hero Blobs - Removed for modern typography style
 });
