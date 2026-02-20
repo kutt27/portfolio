@@ -709,22 +709,23 @@ footer::before {
 
     .section-header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         gap: 0.5rem;
         padding-bottom: 2rem;
         width: 100%;
+        text-align: center;
     }
 
     .section-title {
         font-size: 2.5rem;
-        text-align: left;
+        text-align: center;
         line-height: 1.1;
         width: 100%;
         word-wrap: break-word;
     }
 
     .section-desc {
-        text-align: left;
+        text-align: center;
         max-width: 100%;
         margin-top: 0.5rem;
     }
