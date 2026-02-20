@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, observerOptions);
 
     function observeElements() {
-        const animatedElements = document.querySelectorAll('.work-card, .section-title, .section-desc, .about-text');
+        const animatedElements = document.querySelectorAll('.work-card');
 
         animatedElements.forEach((el, index) => {
             // Only set initial styles if not already animated
@@ -138,8 +138,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         article.innerHTML = `
                             <div class="work-image">
-                                <img src="${work.image}" alt="${work.title}">
-                                <div class="overlay"></div>
+                                <div class="work-image-content">
+                                    <span class="work-image-category">${category}</span>
+                                    <h4 class="work-image-title">${work.title}</h4>
+                                </div>
                             </div>
                             <div class="work-card-inner">
                                 <h3 class="work-title">${work.title}</h3>
