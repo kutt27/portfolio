@@ -29,5 +29,36 @@
       ],
       "link": "https://gitlab.com/satheesanamal6/dashboard"
     }
+  ],
+  "quantum": [
+    {
+      "title": "Quantum Error Correction",
+      "description": "Exploration of error correction techniques in quantum computing systems.",
+      "tags": [
+        "Quantum",
+        "Research"
+      ],
+      "link": "https://docs.google.com/document/d/1pmpX_nSQYxFqPnzB4yOOMy3duPCgKqFGf3l0BLEG084/edit?usp=sharing"
+    },
+    {
+      "title": "Quantum randomness",
+      "description": "Utilizing quantum phenomena for high-entropy random number generation.",
+      "tags": [
+        "Quantum",
+        "Physics"
+      ],
+      "link": "#"
+    }
+  ],
+  "product": [
+    {
+      "title": "Product Roadmap",
+      "description": "Product roadmap for a newly funded startup case study.",
+      "tags": [
+        "Strategy",
+        "Fintech"
+      ],
+      "link": "https://drive.google.com/file/d/13ePIi8XDFF959CuPZazZimfCMoLZX0d7/view?usp=sharing"
+    }
   ]
 }

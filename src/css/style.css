@@ -691,17 +691,30 @@ footer::before {
     }
 
     .hero-name {
-        font-size: 22vw;
-        /* Increased for mobile impact */
+        font-size: 20vw;
+        word-wrap: break-word;
     }
 
     .hero-subtitle {
         font-size: 1.1rem;
     }
 
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
     .section-title {
-        font-size: 3rem;
-        /* Reduced from 3.4rem */
+        font-size: 2.8rem;
+        text-align: left;
+    }
+
+    .section-desc {
+        text-align: left;
+        max-width: 100%;
+        font-size: 1rem;
     }
 
     .nav-links {
@@ -714,11 +727,20 @@ footer::before {
 
     .works-grid {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 2.5rem;
+        width: 100%;
+    }
+
+    .work-image {
+        height: 250px;
+    }
+
+    .work-image-title {
+        font-size: 1.6rem;
     }
 
     .category-section {
-        padding: 4rem 1.5rem;
+        padding: 3rem 1.5rem;
     }
 
     /* Center About Section on Mobile */
@@ -739,22 +761,20 @@ footer::before {
 }
 
 @media (max-width: 480px) {
-    .hero-name {
-        font-size: 22vw;
-        /* Even larger on small screens */
-    }
-
-    .hero-greeting {
-        font-size: 0.9rem;
-    }
-
     .section-title {
-        font-size: 2.3rem;
-        /* Reduced further */
+        font-size: 2.2rem;
+    }
+
+    .work-image {
+        height: 200px;
     }
 
     .work-card-inner {
-        padding: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .work-title {
+        font-size: 1.5rem;
     }
 }
 
