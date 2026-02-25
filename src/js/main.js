@@ -10,10 +10,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
         document.documentElement.setAttribute('data-theme', 'dark');
-        themeIcon.textContent = '☀';
     } else {
         document.documentElement.setAttribute('data-theme', 'light');
-        themeIcon.textContent = '☾';
     }
 
     themeToggle.addEventListener('click', () => {
@@ -22,8 +20,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-
-        themeIcon.textContent = newTheme === 'dark' ? '☀' : '☾';
     });
 
     // Mobile Menu Toggle

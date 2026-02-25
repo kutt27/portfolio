@@ -162,6 +162,13 @@ a {
     font-size: 1rem;
     transition: all 0.3s ease;
     box-shadow: none;
+    padding: 0;
+}
+
+.theme-icon {
+    display: block;
+    line-height: 1;
+    font-size: 1rem;
 }
 
 .theme-btn:hover {

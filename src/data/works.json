@@ -21,13 +21,33 @@
       "link": "https://github.com/kutt27/youtube-clone"
     },
     {
-      "title": "DashboardSaaS",
+      "title": "Dashboard",
       "description": "Feedback Board Management Platform.",
       "tags": [
         "Next.js",
         "MongoDB"
       ],
       "link": "https://gitlab.com/satheesanamal6/dashboard"
+    },
+    {
+      "title": "Research library",
+      "description": "A comprehensive personal research library for managing documents and resources.",
+      "tags": [
+        "Next.js",
+        "Prisma",
+        "PostgreSQL",
+        "docker"
+      ],
+      "link": "https://github.com/kutt27/research-library"
+    },
+    {
+      "title": "StudyCue",
+      "description": "An interactive study tool for optimized learning and memory retention.",
+      "tags": [
+        "React",
+        "Education"
+      ],
+      "link": "https://studycue.netlify.app/"
     }
   ],
   "quantum": [
@@ -59,6 +79,97 @@
         "Fintech"
       ],
       "link": "https://drive.google.com/file/d/13ePIi8XDFF959CuPZazZimfCMoLZX0d7/view?usp=sharing"
+    }
+  ],
+  "finance": [
+    {
+      "title": "Finance Encyclopedia",
+      "description": "A comprehensive open-source encyclopedia for financial terms and concepts.",
+      "tags": [
+        "Banking",
+        "Finance",
+        "Investment Banking"
+      ],
+      "link": "https://github.com/kutt27/finance-encyclopedia"
+    }
+  ],
+  "sidequest": [
+    {
+      "title": "GitHub Backup",
+      "description": "Automated system for backing up all GitHub repositories locally.",
+      "tags": [
+        "Automation",
+        "Backup"
+      ],
+      "link": "https://github.com/kutt27/github-backup"
+    },
+    {
+      "title": "Sideai",
+      "description": "AI-powered browser assistant for enhanced productivity.",
+      "tags": [
+        "AI",
+        "Firefox Extension",
+        "groq"
+      ],
+      "link": "https://addons.mozilla.org/en-US/firefox/addon/sideai-ai-assistant/"
+    },
+    {
+      "title": "mojo",
+      "description": "System automation and installation scripts for Mojo environment.",
+      "tags": [
+        "Mojo"
+      ],
+      "link": "https://github.com/kutt27/automation-for-my-system/tree/main/mojo-install"
+    }
+  ],
+  "extra": [
+    {
+      "title": "Python Essentials",
+      "description": "Curated collection of essential Python patterns and resources.",
+      "tags": [
+        "Python",
+        "Tutorial"
+      ],
+      "link": "https://github.com/kutt27/python"
+    },
+    {
+      "title": "Golangdocs",
+      "description": "Modern documentation for Go language features and best practices.",
+      "tags": [
+        "Go",
+        "Documentation"
+      ],
+      "link": "https://golang.amals.xyz/"
+    },
+    {
+      "title": "API Design doc",
+      "description": "Standards and best practices for creating scalable and maintainable APIs.",
+      "tags": [
+        "API",
+        "gRPC",
+        "Design"
+      ],
+      "link": "https://github.com/kutt27/api-design-doc"
+    }
+  ],
+  "blog": [
+    {
+      "title": "Reflection",
+      "description": "A personal space for thoughts on technology, life, and philosophy.",
+      "tags": [
+        "Blog",
+        "Personal"
+      ],
+      "link": "https://reflection.amals.xyz"
+    },
+    {
+      "title": "dev.to",
+      "description": "Technical articles and deep dives into software engineering.",
+      "tags": [
+        "Projects",
+        "Community"
+      ],
+      "link": "https://dev.to/kutt27"
     }
   ]
 }
