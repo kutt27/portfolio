@@ -29,41 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Mobile Menu Toggle
-    const mobileBtn = document.querySelector('.mobile-menu-btn');
-    const mobileMenu = document.querySelector('.mobile-menu');
-    const mobileLinks = document.querySelectorAll('.mobile-link');
-    let isMenuOpen = false;
-
-    function toggleMenu() {
-        isMenuOpen = !isMenuOpen;
-        mobileBtn.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-
-        // Animate hamburger icon
-        const spans = mobileBtn.querySelectorAll('span');
-        if (isMenuOpen) {
-            spans[0].style.transform = 'rotate(45deg) translate(5px, 6px)';
-            spans[1].style.transform = 'rotate(-45deg) translate(5px, -6px)';
-            document.body.style.overflow = 'hidden';
-        } else {
-            spans[0].style.transform = 'none';
-            spans[1].style.transform = 'none';
-            document.body.style.overflow = 'auto';
-        }
-    }
-
-    if (mobileBtn) {
-        mobileBtn.addEventListener('click', toggleMenu);
-    }
-
-    // Close mobile menu when a link is clicked
-    mobileLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            if (isMenuOpen) toggleMenu();
-        });
-    });
-
     // Smooth Scroll for all anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
