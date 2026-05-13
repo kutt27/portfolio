@@ -5,42 +5,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="favicon.png">
-    <title>Amal - Portfolio</title>
+    <title>Amal — Designer & Developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <meta name="google-site-verification" content="JxgYlcz-3WqePSVxws8x8Z9JDaLLjgujs9UyJaUQs90" />
-    <meta name="description" content="Portfolio of Amal">
+    <meta name="description" content="Portfolio of Amal — Designing and building digital products.">
     <meta name="robots" content="index, follow">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.amals.xyz/">
-    <meta property="og:title" content="Amal - Portfolio">
+    <meta property="og:title" content="Amal — Designer & Developer">
     <meta property="og:description" content="Crafting digital experiences at the intersection of Design & Technology.">
-    <!-- <meta property="og:image" content="https://www.amals.xyz/assets/images/og-image.png"> -->
 </head>
 
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <a href="#hero" class="logo">
-                <span class="logo-g">A</span>mal
-            </a>
+            <a href="#hero" class="logo">Amal</a>
             <div class="nav-links">
-                <a href="#development">Development</a>
+                <a href="#development">Work</a>
                 <a href="#blog">Blog</a>
                 <a href="#about">About</a>
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
-                    <span class="theme-icon">●</span>
-                </button>
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">Light</button>
             </div>
             <button class="mobile-menu-btn" aria-label="Toggle menu">
                 <span></span>
@@ -51,7 +44,7 @@
 
     <!-- Mobile Menu Overlay -->
     <div class="mobile-menu">
-        <a href="#development" class="mobile-link">Development</a>
+        <a href="#development" class="mobile-link">Work</a>
         <a href="#blog" class="mobile-link">Blog</a>
         <a href="#about" class="mobile-link">About</a>
     </div>
@@ -59,29 +52,24 @@
     <main>
         <!-- Hero Section -->
         <section class="hero-section" id="hero">
-            <div class="hero-background">
-                <!-- Blobs removed for minimal typography style -->
-            </div>
-            <div class="hero-content">
-                <p class="hero-greeting">Hello, I'm</p>
-                <h1 class="hero-name">
-                    <span class="name-text">Amal</span>
-                </h1>
-                <p class="hero-subtitle">Crafting digital experiences at the intersection of <span
-                        class="highlight">Design</span> & <span class="highlight">Technology</span>.</p>
-            </div>
-            <div class="scroll-indicator">
-                <div class="mouse">
-                    <div class="wheel"></div>
+            <div class="hero-container">
+                <div class="hero-main">
+                    <h1 class="hero-title">
+                        Design &<br>Technology
+                    </h1>
                 </div>
-                <span>Scroll to explore</span>
+                <div class="hero-footer">
+                    <p class="hero-description">
+                        Specialized in Development, Quantum Computing, Finance, and Product Strategy. Currently crafting digital experiences at the intersection of code and design.
+                    </p>
+                </div>
             </div>
         </section>
 
         <!-- Development Section -->
         <section class="category-section" id="development">
             <div class="section-header">
-                <h2 class="section-title">Development</h2>
+                <h2 class="section-title">Work</h2>
                 <p class="section-desc">Building scalable and robust applications.</p>
             </div>
 
@@ -96,12 +84,10 @@
                 <h2 class="section-title">Quantum</h2>
                 <p class="section-desc">Exploring the frontier of quantum computation and physics.</p>
             </div>
-
             <div class="works-grid" id="quantum-grid">
                 <!-- Works will be loaded dynamically -->
             </div>
         </section>
-
 
         <!-- Finance Section -->
         <section class="category-section" id="finance">
@@ -109,7 +95,6 @@
                 <h2 class="section-title">Finance</h2>
                 <p class="section-desc">Analyzing markets and managing assets.</p>
             </div>
-
             <div class="works-grid" id="finance-grid">
                 <!-- Works will be loaded dynamically -->
             </div>
@@ -121,7 +106,6 @@
                 <h2 class="section-title">Product</h2>
                 <p class="section-desc">Strategizing and optimizing user value.</p>
             </div>
-
             <div class="works-grid" id="product-grid">
                 <!-- Works will be loaded dynamically -->
             </div>
@@ -130,10 +114,9 @@
         <!-- Side Quests Section -->
         <section class="category-section" id="sidequest">
             <div class="section-header">
-                <h2 class="section-title">Side Quests</h2>
+                <h2 class="section-title">Experiments</h2>
                 <p class="section-desc">Exploring side projects and experiments.</p>
             </div>
-
             <div class="works-grid" id="sidequest-grid">
                 <!-- Works will be loaded dynamically -->
             </div>
@@ -142,10 +125,9 @@
         <!-- Extra Section -->
         <section class="category-section" id="extra">
             <div class="section-header">
-                <h2 class="section-title">Extra</h2>
+                <h2 class="section-title">Resources</h2>
                 <p class="section-desc">Additional resources and documentation.</p>
             </div>
-
             <div class="works-grid" id="extra-grid">
                 <!-- Works will be loaded dynamically -->
             </div>
@@ -157,7 +139,6 @@
                 <h2 class="section-title">Blog</h2>
                 <p class="section-desc">Thoughts on technology and more.</p>
             </div>
-
             <div class="works-grid" id="blog-grid">
                 <!-- Works will be loaded dynamically -->
             </div>
@@ -166,39 +147,36 @@
         <!-- About Section -->
         <section class="about-section" id="about">
             <div class="about-content">
-                <h2 class="section-title">About Me</h2>
-                <p class="about-text">
-                    I'm a multidisciplinary professional bridging the gaps between code, finance, product strategy, and
-                    human behavior.
-                    My work is driven by a curiosity to understand how things work—from complex algorithms to social
-                    dynamics.
-                </p>
-                <a href="mailto:[EMAIL_ADDRESS]" class="contact-link">
-                    <span>Let's Talk</span>
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12H19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                        <path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                            stroke-linejoin="round" />
-                    </svg>
-                </a>
+                <h2 class="about-title">About</h2>
+                <div class="about-text-container">
+                    <p class="about-text">
+                        I'm a multidisciplinary professional bridging the gaps between code, finance, product strategy, and
+                        human behavior.
+                        My work is driven by a curiosity to understand how things work—from complex algorithms to social
+                        dynamics.
+                    </p>
+                    <a href="mailto:[EMAIL_ADDRESS]" class="contact-link">Get in touch</a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-content">
-            <p>&copy; 2026 Amal. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-                <a href="#">Twitter</a>
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Amal. Crafted with precision.</p>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="#">LinkedIn</a>
+                    <a href="#">GitHub</a>
+                    <a href="#">Twitter</a>
+                </div>
             </div>
         </div>
     </footer>
 
     <script src="js/main.js"></script>
-    <!-- Vercel analytics -->
     <script defer src="/_vercel/insights/script.js"></script>
 </body>
 
